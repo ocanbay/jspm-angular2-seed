@@ -817,7 +817,9 @@ SystemJS.config({
         "github:*/*.json"
     ],
     map: {
+        "@angular/forms": "npm:@angular/forms@0.3.0",
         "@angular/http": "npm:@angular/http@2.0.0-rc.5",
+        "@angular/router-deprecated": "npm:@angular/router-deprecated@2.0.0-rc.2",
         "css": "github:systemjs/plugin-css@0.1.26",
         "@angular/common": "npm:@angular/common@2.0.0-rc.5",
         "@angular/compiler": "npm:@angular/compiler@2.0.0-rc.5",

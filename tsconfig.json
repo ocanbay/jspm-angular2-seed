@@ -17,6 +17,9 @@
             "@angular/core": [
                 "jspm_packages/npm/@angular/core@2.0.0-rc.5"
             ],
+            "@angular/forms": [
+                "jspm_packages/npm/@angular/forms@0.3.0"
+            ],
             "@angular/http": [
                 "jspm_packages/npm/@angular/http@2.0.0-rc.5"
             ]
