@@ -6,12 +6,13 @@ import { AppComponent }  from './app.component';
 import { MenuComponent }  from './menu/components/menu.component';
 import { HomeComponent }  from './home/components/home.component';
 import { HeroComponent }  from './hero/components/hero.component';
+import { HeroDetailComponent }  from './hero/components/hero-detail.component';
 
 
 @NgModule({
     imports: [BrowserModule, FormsModule],
     declarations: [AppComponent,
-        MenuComponent, HeroComponent],
+        MenuComponent, HeroComponent, HeroDetailComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule {

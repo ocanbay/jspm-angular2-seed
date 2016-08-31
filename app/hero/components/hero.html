@@ -1,17 +1,5 @@
 <h1>{{title}}</h1>
 
-<div *ngIf="selectedHero">
-    <p>
-        {{selectedHero.name}} details!
-    </p>
-    <div>
-        <label>id: </label>{{selectedHero.id}}</div>
-    <div>
-        <label>name: </label>
-        <input [(ngModel)]="selectedHero.name" placeholder="name" />
-    </div>
-</div>
-
 <h2>My Heroes</h2>
 
 <table class="ui selectable celled striped table">
@@ -22,9 +10,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let hero of heroes" (click)="onSelect(hero)">
+        <tr *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.active]="hero === selectedHero">
             <td>{{hero.id}}</td>
             <td>{{hero.name}}</td>
         </tr>
     </tbody>
 </table>
+
+<hero-detail [hero]="selectedHero"></hero-detail>

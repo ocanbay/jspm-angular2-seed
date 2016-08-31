@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import heroHtml from './hero.html';
 
-export class Hero {
-    id: number;
-    name: string;
-}
+import {Hero} from './hero';
 
 const HEROES: Hero[] = [
     { id: 11, name: 'Mr. Nice' },
