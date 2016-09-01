@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import heroDetailHtml from './hero-detail.html';
 
-import {Hero} from './hero';
+import {Hero} from '../model/hero';
 
 
 
